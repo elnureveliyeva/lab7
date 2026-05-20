@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="sayi1" placeholder="birinci eded">
+    <input type="text" id="sayi2" placeholder="ikinci eded">
+    <button id="cem">+</button>
+    <button id="ferq">-</button>
+    <p>Netice: <span id="hesablama">0</span></p>
+    <script src="test.js"></script>
+</body>
+</html>
+
+
+
+document.getElementById("cem").onclick = function() {
+    var a = Number(document.getElementById("sayi1").value);
+    var b = Number(document.getElementById("sayi2").value);
+    document.getElementById("hesablama").innerHTML = a + b;
+}
+document.getElementById("ferq").onclick = function() {
+    var a = Number(document.getElementById("sayi1").value);
+    var b = Number(document.getElementById("sayi2").value);
+    document.getElementById("hesablama").innerHTML = a - b;
+}
