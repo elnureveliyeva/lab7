@@ -14,3 +14,12 @@
 </html>
 
 
+var say = 0;
+document.getElementById("artirma").onclick = function() {
+    say++;
+    document.getElementById("reqem").innerHTML = say;
+}
+document.getElementById("azaltma").onclick = function() {
+    say--;
+    document.getElementById("reqem").innerHTML = say;
+}
