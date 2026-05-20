@@ -16,14 +16,13 @@
 </html>
 
 
-
 document.getElementById("cem").onclick = function() {
-    var a = Number(document.getElementById("sayi1").value);
-    var b = Number(document.getElementById("sayi2").value);
+    let a = Number(document.getElementById("sayi1").value);
+    let b = Number(document.getElementById("sayi2").value);
     document.getElementById("hesablama").innerHTML = a + b;
 }
 document.getElementById("ferq").onclick = function() {
-    var a = Number(document.getElementById("sayi1").value);
-    var b = Number(document.getElementById("sayi2").value);
+    let a = Number(document.getElementById("sayi1").value);
+    let b = Number(document.getElementById("sayi2").value);
     document.getElementById("hesablama").innerHTML = a - b;
 }
